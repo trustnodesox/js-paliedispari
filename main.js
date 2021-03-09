@@ -1,11 +1,14 @@
-var domanda = prompt("Inserisci una parola")
-
-function palindroma(domanda) {
-  return domanda == domanda.split('').reverse('').join('');
+function palindroma (stringa) {
+  var stringa = domanda;
+  var contrario = domanda.split('').reverse('').join('');
+  return contrario === stringa;
 }
 
-if (palindroma = true) {
-  document.getElementById('palindroma').innerHTML = "Complimenti, la parola che hai inserito è palindroma"
-} else {   document.getElementById('palindroma').innerHTML = "Mi dispiace, la parola che hai inserito non è palindroma"
-
+var domanda = prompt("Inserisci una parola!");
+if (domanda === palindroma) {
+  document.getElementById('palindroma').innerHTML = "Hai inserito una parola palindroma";
+} else {
+  document.getElementById('palindroma').innerHTML = "La parola che hai inserito non è palindroma";
 }
+
+console.log(palindroma(domanda));
