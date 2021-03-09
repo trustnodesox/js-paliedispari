@@ -1,8 +1,5 @@
 var domanda = prompt("Inserisci una parola")
 
-var parola = convalida
-
-
 function palindroma(domanda) {
   return domanda == domanda.split('').reverse('').join('');
 }
